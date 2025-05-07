@@ -195,7 +195,28 @@ Securing the backend APIs is a critical aspect of ensuring the safety of user da
 
 ### 4. **Data Encryption (HTTPS)**
 - **Description**: All sensitive data exchanged between the client and the server should be encrypted using HTTPS (SSL/TLS) to prevent eavesdropping and man-in-the-middle attacks.
-- **Importance**: Data encryption ensures that sensitive information, such as passwor
+- **Importance**: Data encryption ensures that sensitive information, such as password
+
+## ⚙️ CI/CD Pipeline
+
+### What are CI/CD Pipelines?
+- **Continuous Integration (CI)** is the practice of frequently integrating code changes into a shared repository, followed by automated testing to detect issues early. This ensures that the codebase remains stable and developers can collaborate efficiently.
+- **Continuous Deployment (CD)** automates the process of deploying code to production, ensuring that new features, updates, and bug fixes are delivered to users quickly and with minimal manual intervention.
+
+### Importance of CI/CD for the Project
+CI/CD pipelines are crucial for this project because they help:
+- **Automate testing**: Automatically run tests (unit tests, integration tests) every time code is pushed, ensuring code quality.
+- **Speed up development**: Automate deployments to staging or production environments, reducing the time taken to deliver updates and fixes.
+- **Improve collaboration**: Allow multiple developers to work on different features or fixes simultaneously without affecting the main codebase.
+- **Maintain reliability**: Ensure that only tested, high-quality code is deployed to production, reducing the chances of bugs or errors in live environments.
+
+### Tools for CI/CD
+- **GitHub Actions**: A tool that allows you to automate workflows directly within GitHub, such as testing, building, and deploying your application whenever changes are pushed to the repository.
+- **Docker**: A platform for automating the deployment of applications in lightweight, portable containers. Docker can be integrated into the CI/CD pipeline to ensure the app runs consistently across different environments.
+- **Jenkins**: Another popular CI/CD tool that automates the building, testing, and deployment process, although GitHub Actions is more commonly used for GitHub-based projects.
+- **Travis CI**: A cloud-based service that provides continuous integration and testing for GitHub projects, although it’s becoming less common with the rise of GitHub Actions.
+
+
 
 
 
