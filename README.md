@@ -163,6 +163,20 @@ The database for the AirBnB Clone project is designed to manage users, propertie
 - **Relation**: 
   - A **payment** is associated with a **booking**.
 
+## 🔧 Feature Breakdown
+
+### 1. **User Management**
+- **Description**: This feature allows users to register, log in, and manage their profiles. Users can create accounts, authenticate securely, and update their information. This is crucial for personalizing the experience and ensuring secure access to their data.
+
+### 2. **Property Management**
+- **Description**: Property management enables users (hosts) to create, update, retrieve, and delete property listings. This feature is key to the platform’s functionality, allowing hosts to display available properties and manage details like prices, descriptions, and availability.
+
+### 3. **Booking System**
+- **Description**: The booking system allows users to reserve properties for specified dates. It includes functionality for users to create, modify, and cancel bookings, providing an essential component for managing reservations on the platform.
+
+### 4. **Payment Processing**
+- **Description**: The payment processing feature handles financial transactions between users and hosts. It ensures secure payment for bookings and provides confirmation once the
+
 
 
 
