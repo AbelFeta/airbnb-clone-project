@@ -58,6 +58,39 @@ This project involves several key roles, each responsible for different aspects 
 - Ensures the architecture supports scalability, security, and flexibility.
 - Makes high-level design decisions on services, microservices, and APIs.
 
+- ## 🛠️ Technology Stack
+
+The technology stack used for this project includes the following tools and frameworks:
+
+### 🐍 Python
+- **Purpose**: The programming language used to build the backend of the project. Python is known for its simplicity and readability, making it an ideal choice for rapid development.
+
+### 🌐 Django
+- **Purpose**: A high-level Python web framework that allows rapid development of secure and maintainable websites. Django will be used to build the backend API (using Django REST Framework) and handle the core business logic.
+
+### 🛠️ Django REST Framework (DRF)
+- **Purpose**: An extension of Django that simplifies the process of building RESTful APIs. DRF allows easy creation of endpoints, serialization of data, and handling authentication and permissions.
+
+### 🐘 PostgreSQL
+- **Purpose**: A relational database management system (RDBMS) used to store and manage the project's data. PostgreSQL is chosen for its robustness, support for advanced data types, and scalability.
+
+### 🔄 GraphQL
+- **Purpose**: A flexible query language for APIs that allows clients to request specific data. In contrast to REST, GraphQL enables more efficient data fetching, making it easier for front-end applications to request only the data they need.
+
+### 🔥 Celery
+- **Purpose**: A distributed task queue system used to handle asynchronous tasks such as sending notifications, processing payments, and executing scheduled tasks.
+
+### 🧮 Redis
+- **Purpose**: A fast, in-memory data store used for caching and session management. Redis will help speed up the application by reducing the load on the database for frequently accessed data.
+
+### 🐳 Docker
+- **Purpose**: A platform that allows you to containerize applications and ensure that the development, testing, and production environments are consistent. Docker will be used for containerizing the app to make deployment easier and more reliable.
+
+### 💻 CI/CD Pipelines
+- **Purpose**: Continuous Integration and Continuous Deployment tools (e.g., GitHub Actions) will be used to automate the testing and deployment process. These tools ensure that the project remains bug-free and up-to-date as new changes are pushed.
+
+
+
 ### 🔐 Security Engineer (optional in advanced teams)
 - Implements security policies and encryption.
 - Reviews code for vulnerabilities (e.g., SQL injection, XSS).
