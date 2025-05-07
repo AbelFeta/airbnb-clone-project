@@ -177,6 +177,26 @@ The database for the AirBnB Clone project is designed to manage users, propertie
 ### 4. **Payment Processing**
 - **Description**: The payment processing feature handles financial transactions between users and hosts. It ensures secure payment for bookings and provides confirmation once the
 
+## 🔐 API Security
+
+Securing the backend APIs is a critical aspect of ensuring the safety of user data and the integrity of the system. Below are the key security measures that will be implemented:
+
+### 1. **Authentication**
+- **Description**: Authentication ensures that only valid users can access their accounts and use the platform. It typically involves validating credentials (such as username/email and password) to ensure the user is who they claim to be.
+- **Importance**: Authentication is vital for protecting sensitive user data, ensuring that only authorized individuals can access their personal information, property listings, bookings, and payment details.
+
+### 2. **Authorization**
+- **Description**: Authorization ensures that once a user is authenticated, they can only access the resources and perform actions they are permitted to. For example, a user cannot edit someone else’s property listing or view another user’s booking details.
+- **Importance**: Authorization prevents unauthorized access to sensitive information, ensuring that users can only perform actions they are allowed to, such as managing their own bookings or property listings.
+
+### 3. **Rate Limiting**
+- **Description**: Rate limiting restricts the number of requests a user can make to the API within a specified time period. This prevents abuse and protects the system from overload or malicious attacks like denial-of-service (DoS).
+- **Importance**: Rate limiting helps protect the platform from malicious users attempting to overwhelm the API by making too many requests in a short time, which could impact the performance and availability of the platform.
+
+### 4. **Data Encryption (HTTPS)**
+- **Description**: All sensitive data exchanged between the client and the server should be encrypted using HTTPS (SSL/TLS) to prevent eavesdropping and man-in-the-middle attacks.
+- **Importance**: Data encryption ensures that sensitive information, such as passwor
+
 
 
 
