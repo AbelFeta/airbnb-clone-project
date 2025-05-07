@@ -96,4 +96,73 @@ The technology stack used for this project includes the following tools and fram
 - Reviews code for vulnerabilities (e.g., SQL injection, XSS).
 - Manages authentication systems and monitors threats.
 
+## 🗄️ Database Design
+
+The database for the AirBnB Clone project is designed to manage users, properties, bookings, reviews, and payments. Below is the design for each key entity and how they are related.
+
+### 1. **User**
+- **Fields**:
+  - `id`: Unique identifier for each user.
+  - `email`: The user's email address (used for authentication).
+  - `password`: Encrypted password for authentication.
+  - `first_name`: First name of the user.
+  - `last_name`: Last name of the user.
+  - `created_at`: Timestamp for when the user account was created.
+
+- **Relation**: 
+  - A **user** can create multiple **properties**.
+  - A **user** can have multiple **bookings**.
+  - A **user** can leave multiple **reviews**.
+
+### 2. **Property**
+- **Fields**:
+  - `id`: Unique identifier for each property.
+  - `title`: Title or name of the property.
+  - `description`: Description of the property.
+  - `price_per_night`: Price charged per night for the property.
+  - `owner_id`: Foreign key linking to the **user** who owns the property.
+
+- **Relation**: 
+  - A **property** belongs to a **user** (owner).
+  - A **property** can have multiple **bookings**.
+  - A **property** can have multiple **reviews**.
+
+### 3. **Booking**
+- **Fields**:
+  - `id`: Unique identifier for each booking.
+  - `user_id`: Foreign key linking to the **user** who made the booking.
+  - `property_id`: Foreign key linking to the **property** being booked.
+  - `check_in`: Check-in date for the booking.
+  - `check_out`: Check-out date for the booking.
+  - `status`: Status of the booking (e.g., confirmed, cancelled).
+
+- **Relation**: 
+  - A **booking** belongs to a **user**.
+  - A **booking** is associated with one **property**.
+
+### 4. **Review**
+- **Fields**:
+  - `id`: Unique identifier for each review.
+  - `user_id`: Foreign key linking to the **user** who wrote the review.
+  - `property_id`: Foreign key linking to the **property** being reviewed.
+  - `rating`: Rating given by the user (e.g., 1-5 stars).
+  - `comment`: User’s written feedback on the property.
+
+- **Relation**: 
+  - A **review** belongs to a **user**.
+  - A **review** belongs to a **property**.
+
+### 5. **Payment**
+- **Fields**:
+  - `id`: Unique identifier for each payment.
+  - `booking_id`: Foreign key linking to the **booking** being paid for.
+  - `amount`: Total amount of the payment.
+  - `payment_date`: Date the payment was made.
+  - `payment_status`: Status of the payment (e.g., successful, pending, failed).
+
+- **Relation**: 
+  - A **payment** is associated with a **booking**.
+
+
+
 
